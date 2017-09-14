@@ -30,7 +30,6 @@ public class StepDefinitionMCS {
 	        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		}
 		
-
 			driver.get("https://mendeley.com/");
 			driver.manage().window().maximize();
 			MendeleyLandingPage landingPage  = new MendeleyLandingPage(driver);
