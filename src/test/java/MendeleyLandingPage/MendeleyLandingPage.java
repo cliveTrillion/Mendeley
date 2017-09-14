@@ -2,6 +2,7 @@ package MendeleyLandingPage;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import pageObjects.LandingPage;
 
 public class MendeleyLandingPage {
 	WebDriver driver;
@@ -13,11 +14,11 @@ public class MendeleyLandingPage {
 		
 	}
 	public void signIn(){
-		driver.findElement(signInLink).click();
+		driver.findElement(LandingPage.signInLink).click();
 	}
 	
 	public void createNewAccount(){
-		driver.findElement(createNewUserLink).click();
+		driver.findElement(LandingPage.createNewUserLink).click();
 	}
 	
 }
